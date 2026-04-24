@@ -1,0 +1,38 @@
+# Python Dependencies for Weather Application
+# FastAPI web framework for building the backend API
+fastapi==0.104.1
+
+# ASGI server for running FastAPI in production
+uvicorn[standard]==0.24.0
+
+# HTTP library for making requests to external weather APIs
+requests==2.31.0
+
+# Environment variable management for API keys and configuration
+python-dotenv==1.0.0
+
+# Pydantic data validation (included with FastAPI but explicitly listed)
+pydantic==2.5.2
+
+# HTTP client for async operations (compatible with FastAPI)
+httpx==0.25.2
+
+# CORS middleware for handling cross-origin requests
+# (included with FastAPI but explicitly listed for clarity)
+# fastapi already includes starlette which provides CORSMiddleware
+
+# Data validation and serialization
+pydantic-settings==2.1.0
+
+# Logging configuration
+loguru==0.7.2
+
+# Testing dependencies (optional but recommended for development)
+pytest==7.4.3
+pytest-asyncio==0.21.1
+httpx==0.25.2
+
+# Development tools
+black==23.11.0  # Code formatter
+isort==5.12.0   # Import sorter
+flake8==6.1.0   # Linter
